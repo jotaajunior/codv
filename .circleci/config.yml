@@ -52,3 +52,5 @@ workflows:
               only: /^v.*/
             branches:
               ignore: /.*/
+          requires:
+            - test
