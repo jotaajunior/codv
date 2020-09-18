@@ -1,7 +1,7 @@
 {
   "name": "codv",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "dist/index.js",
   "license": "MIT",
   "devDependencies": {
     "@types/jest": "^26.0.14",
