@@ -19,16 +19,14 @@ yarn add codv
 Generates a random code.
 
 ```ts
-import { createCode } from 'codv'
+import { generateCode } from 'codv'
 
 const [code, checkDigits] = generateCode() // [ '25931', '49' ]
 ```
 
-You can define the size of the code as well as the size of the check code:
-
 #### Parameters
 
-- `codeLength` the size of the code. Default is 5.
+- `bodyLength` the size of the code. Default is 5.
 - `checkLength` the length of the check digits. Default is 2.
 
 ### `verifyCode`
@@ -43,16 +41,16 @@ const code = verifyCode('25931', '49') // true
 
 #### Parameters
 
-- `code` The code.
-- `checkDigit` The check digit for the code.
+- `body` The code.
+- `checkDigits` The check digit for the code.
 
 ## Example
 
-Codv utilizes the modulo 11 algorithm for calculating the check digits, the same algorith as [CPF](https://en.wikipedia.org/wiki/Cadastro_de_Pessoas_F%C3%ADsicas), so it's possible to generate and verify them:
+Codv utilizes the modulo 11 algorithm for calculating the check digits, this is the same algorithm used by the [CPF](https://en.wikipedia.org/wiki/Cadastro_de_Pessoas_F%C3%ADsicas) and a lot of other identifications worldwide, so it's possible to generate and validate CPF-valid codes:
+
+### Generating a valid random CPF
 
 ```ts
-// Generating randdom CPFs
-
 import { generateCode } from 'codv'
 
 const cpf = generateCode(9, 2)
@@ -60,11 +58,9 @@ const cpf = generateCode(9, 2)
 console.log(cpf) // [ '471896067', '34' ]
 ```
 
-And verifying:
+### Verifying a CPF
 
 ```ts
-// Verifying CPFs
-
 import { verifyCode } from './verifyCode'
 
 console.log(verifyCode('471896067', '34')) // true
