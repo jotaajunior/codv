@@ -20,7 +20,7 @@ jobs:
           app-dir: ~/repo
           pkg-manager: yarn
       - run: yarn install
-      - run: yarn jest --coverage
+      - run: yarn test
       - codecov/upload:
           file: ./coverage/coverage-final.json
       - persist_to_workspace:

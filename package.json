@@ -5,6 +5,10 @@
   "author": "Jota <jjunior@protonmail.ch>",
   "description": "Generate and validates random codes with check digits",
   "license": "MIT",
+  "scripts": {
+    "test": "yarn jest --coverage",
+    "build": "yarn build"
+  },
   "devDependencies": {
     "@types/jest": "^26.0.14",
     "@types/node": "^14.10.3",
