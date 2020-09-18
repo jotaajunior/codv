@@ -42,6 +42,7 @@ jobs:
 
 
 workflows:
+  version: 2
   launch:
     jobs:
       - test
@@ -49,5 +50,5 @@ workflows:
           filters:
             tags:
               only: /^v.*/
-          requires:
-            - test
+            branches:
+              ignore: /.*/
