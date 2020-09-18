@@ -1,10 +1,14 @@
 {
   "name": "codv",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "main": "dist/index.js",
   "author": "Jota <jjunior@protonmail.ch>",
   "description": "Generate and validates random codes with check digits",
   "license": "MIT",
+  "scripts": {
+    "test": "jest --coverage",
+    "build": "tsc"
+  },
   "devDependencies": {
     "@types/jest": "^26.0.14",
     "@types/node": "^14.10.3",

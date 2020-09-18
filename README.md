@@ -2,6 +2,8 @@
 
 ![](https://img.shields.io/badge/license-MIT-green)
 [![codecov](https://codecov.io/gh/jotaajunior/codv/branch/master/graph/badge.svg?token=XE6V7I3RF4)](https://codecov.io/gh/jotaajunior/codv)
+[![Codv](https://circleci.com/gh/jotaajunior/codv.svg?style=shield)](https://circleci.com/gh/jotaajunior/codv)
+
 
 Codv is a tiny library for generating arbitrary-sized codes with [check digits](https://en.wikipedia.org/wiki/Check_digit).
 
@@ -22,7 +24,7 @@ You can define the size of the code as well as the size of the check code:
 #### Parameters
 
 - `codeLength` the size of the code. Default is 5.
-- `checkLength` the length of the check digits, default is 2.
+- `checkLength` the length of the check digits. Default is 2.
 
 ### `verifyCode`
 

@@ -5,21 +5,49 @@ orbs:
   node: 'circleci/node@4.0.0'
   codecov: 'codecov/codecov@1.0.2'
 
+defaults: &defaults
+  working_directory: ~/repo
+  executor:
+    name: node/default
+
 jobs:
   test:
-    executor:
-      name: node/default
+    <<: *defaults
 
     steps:
       - checkout
       - node/install-packages:
+          app-dir: ~/repo
           pkg-manager: yarn
       - run: yarn install
-      - run: yarn jest --coverage
+      - run: yarn test
       - codecov/upload:
           file: ./coverage/coverage-final.json
+      - persist_to_workspace:
+          root: ~/repo
+          paths: .
+
+  build_and_publish:
+    <<: *defaults
+
+    steps:
+      - attach_workspace:
+          at: ~/repo
+      - run: yarn build
+      - run: echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/repo/.npmrc
+      - run: npm publish
+      - persist_to_workspace:
+          root: ~/repo
+          paths: .
+
 
 workflows:
-  test_my_app:
+  launch:
     jobs:
       - test
+      - build_and_publish:
+          filters:
+            tags:
+              only: /^v.*/
+          requires:
+            - test
