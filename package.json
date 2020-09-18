@@ -1,6 +1,6 @@
 {
   "name": "codv",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "main": "dist/index.js",
   "author": "Jota <jjunior@protonmail.ch>",
   "description": "Generate and validates random codes with check digits",
