@@ -1,5 +1,11 @@
 import { getCheckDigit } from './getCheckDigit'
 
+/**
+ * Generates random check digits for the code.
+ *
+ * @param code The code
+ * @param checkLength The length of the check digits
+ */
 export function getCheckDigits(code: number[], checkLength: number) {
   const checkDigits: number[] = []
 

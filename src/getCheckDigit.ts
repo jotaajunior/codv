@@ -1,3 +1,8 @@
+/**
+ * Gets one check digit for the code.
+ *
+ * @param code The code
+ */
 export function getCheckDigit(code: number[]) {
   const codeLength = code.length + 1
 
