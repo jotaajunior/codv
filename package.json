@@ -6,8 +6,8 @@
   "description": "Generate and validates random codes with check digits",
   "license": "MIT",
   "scripts": {
-    "test": "yarn jest --coverage",
-    "build": "yarn build"
+    "test": "jest --coverage",
+    "build": "tsc"
   },
   "devDependencies": {
     "@types/jest": "^26.0.14",
