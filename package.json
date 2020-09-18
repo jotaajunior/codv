@@ -2,6 +2,8 @@
   "name": "codv",
   "version": "1.0.0",
   "main": "dist/index.js",
+  "author": "Jota <jjunior@protonmail.ch>",
+  "description": "Generate and validates random codes with check digits",
   "license": "MIT",
   "devDependencies": {
     "@types/jest": "^26.0.14",
@@ -18,5 +20,6 @@
     "jest": "^26.4.2",
     "ts-jest": "^26.3.0",
     "typescript": "^4.0.2"
-  }
+  },
+  "repository": "https://github.com/jotaajunior/codv.git"
 }
