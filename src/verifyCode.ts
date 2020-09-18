@@ -1,16 +1,9 @@
 import { toArrayOfNumbers } from './utils/toArrayOfNumbers'
-import { getCheckDigit } from './getCheckDigit'
+import { getCheckDigits } from './getCheckDigits'
 
 export function verifyCode(body: string, checkDigits: string) {
   const fixedBody = toArrayOfNumbers(body)
-
-  const expectedCheckDigits: number[] = []
-  for (let i = 0; i < checkDigits.length; ++i) {
-    expectedCheckDigits.push(getCheckDigit([
-      ...fixedBody,
-      ...expectedCheckDigits
-    ]))
-  }
+  const expectedCheckDigits = getCheckDigits(fixedBody, checkDigits.length)
 
   return checkDigits === expectedCheckDigits.join('')
 }
