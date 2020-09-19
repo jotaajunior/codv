@@ -2,7 +2,7 @@
 
 ![](https://img.shields.io/badge/license-MIT-green)
 [![codecov](https://codecov.io/gh/jotaajunior/codv/branch/master/graph/badge.svg?token=XE6V7I3RF4)](https://codecov.io/gh/jotaajunior/codv)
-[![Codv](https://circleci.com/gh/jotaajunior/codv.svg?style=shield)](https://circleci.com/gh/jotaajunior/codv)
+[![Codv](https://circleci.com/gh/jotaajunior/codv/tree/launch.svg?style=shield)](https://circleci.com/gh/jotaajunior/codv)
 
 Codv is a tiny library for generating arbitrary-sized codes with [check digits](https://en.wikipedia.org/wiki/Check_digit).
 
@@ -26,8 +26,8 @@ const [code, checkDigits] = generateCode() // [ '25931', '49' ]
 
 #### Parameters
 
-- `bodyLength` the size of the code. Default is 5.
-- `checkLength` the length of the check digits. Default is 2.
+- `bodyLength`: the length code's body. Default is 5.
+- `checkLength`: the length of the code's check digits. Default is 2.
 
 ### `verifyCode`
 
@@ -41,12 +41,12 @@ const code = verifyCode('25931', '49') // true
 
 #### Parameters
 
-- `body` The code.
-- `checkDigits` The check digit for the code.
+- `body`: The code's body.
+- `checkDigits`: The check digits to validate against the body.
 
 ## Example
 
-Codv utilizes the modulo 11 algorithm for calculating the check digits, this is the same algorithm used by the [CPF](https://en.wikipedia.org/wiki/Cadastro_de_Pessoas_F%C3%ADsicas) and a lot of other identifications worldwide, so it's possible to generate and validate CPF-valid codes:
+Codv utilizes the modulo 11 algorithm for calculating the check digits, this is the same algorithm used by the [CPF](https://en.wikipedia.org/wiki/Cadastro_de_Pessoas_F%C3%ADsicas) and a lot of other identifications numbers worldwide. The following code shows how to generate and verify CPF-like codes.
 
 ### Generating a valid random CPF
 
