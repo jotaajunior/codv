@@ -1,6 +1,6 @@
 import { createBody } from './createBody'
 
-describe('createCode', () => {
+describe('createHexBody', () => {
   it('should generate with the specified size', () => {
     expect(createBody(5).length).toBe(5)
   })
