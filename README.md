@@ -33,7 +33,7 @@ const [code, checkDigits] = generateCode() // [ '25931', '49' ]
 
 Generates a random hexadecimal code.
 
-For hexadecimal codes, the check digits are still generated with modulo 11 algorithm, so check digits will be decimal.
+The check digits of a hexadecimal code are still decimal values, as they are also generated with the same modulo 11 algorithm as the decimal codes.
 
 ```ts
 import { generateHexCode } from 'codv'
