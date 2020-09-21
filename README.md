@@ -2,7 +2,7 @@
 
 ![](https://img.shields.io/badge/license-MIT-green)
 [![codecov](https://codecov.io/gh/jotaajunior/codv/branch/master/graph/badge.svg?token=XE6V7I3RF4)](https://codecov.io/gh/jotaajunior/codv)
-[![Codv](https://circleci.com/gh/jotaajunior/codv/tree/launch.svg?style=shield)](https://circleci.com/gh/jotaajunior/codv)
+![Build](https://github.com/jotaajunior/codv/workflows/Build/badge.svg)
 
 Codv is a tiny library for generating arbitrary-sized codes with [check digits](https://en.wikipedia.org/wiki/Check_digit).
 
@@ -29,6 +29,8 @@ const [code, checkDigits] = generateCode() // [ '25931', '49' ]
 - `bodyLength`: the length of the code's body. Default is 5.
 - `checkLength`: the length of the code's check digits. Default is 2.
 
+---
+
 ### `generateHexCode`
 
 Generates a random hexadecimal code.
@@ -45,6 +47,8 @@ const [code, checkDigits] = generateHexCode() // [ 'b5ac9', '26' ]
 
 - `bodyLength`: the length of the code's body. Default is 5.
 - `checkLength`: the length of the code's check digits. Default is 2.
+
+---
 
 ### `verifyCode`
 
