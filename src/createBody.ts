@@ -1,7 +1,7 @@
 /**
  * Creates a random body for the code.
  *
- * @param length The length of the code
+ * @param length The length of the code's body
  */
 export function createBody(length: number) {
   const randomCode = []

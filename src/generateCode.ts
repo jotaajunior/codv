@@ -4,8 +4,8 @@ import { getCheckDigits } from './getCheckDigits'
 /**
  * Generates a random code.
  *
- * @param bodyLength The body length
- * @param checkLength The check digits length
+ * @param bodyLength The code's body length
+ * @param checkLength The code's check digits length
  */
 export function generateCode(
   bodyLength: number = 5,

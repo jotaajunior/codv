@@ -4,8 +4,8 @@ import { getCheckDigits } from './getCheckDigits'
 /**
  * Verify if the code and the check digits matches.
  *
- * @param body The code
- * @param checkDigits The check digits
+ * @param body The code's body
+ * @param checkDigits The code's check digits
  */
 export function verifyCode(body: string, checkDigits: string) {
   const fixedBody = toArrayOfNumbers(body)

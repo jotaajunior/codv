@@ -1,5 +1,5 @@
-export function toArrayOfNumbers(code: string) {
-  return code
+export function toArrayOfNumbers(body: string) {
+  return body
     .split('')
     .map(Number)
 }

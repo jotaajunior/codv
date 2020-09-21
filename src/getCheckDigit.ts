@@ -1,14 +1,14 @@
 /**
- * Gets one check digit for the code.
+ * Gets one check digit for the code's body.
  *
- * @param code The code
+ * @param body The code's body
  */
-export function getCheckDigit(code: number[]) {
-  const codeLength = code.length + 1
+export function getCheckDigit(body: number[]) {
+  const bodyLength = body.length + 1
 
   let verifier = 0
-  for (let i = codeLength, j = 0; i > 1; --i, ++j) {
-    verifier += i * code[j]
+  for (let i = bodyLength, j = 0; i > 1; --i, ++j) {
+    verifier += i * body[j]
   }
   verifier %= 11
 
