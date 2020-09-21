@@ -26,7 +26,7 @@ const [code, checkDigits] = generateCode() // [ '25931', '49' ]
 
 #### Parameters
 
-- `bodyLength`: the length code's body. Default is 5.
+- `bodyLength`: the length of the code's body. Default is 5.
 - `checkLength`: the length of the code's check digits. Default is 2.
 
 ### `verifyCode`
@@ -46,7 +46,9 @@ const code = verifyCode('25931', '49') // true
 
 ## Example
 
-Codv utilizes the modulo 11 algorithm for calculating the check digits, this is the same algorithm used by the [CPF](https://en.wikipedia.org/wiki/Cadastro_de_Pessoas_F%C3%ADsicas) and a lot of other identifications numbers worldwide. The following code shows how to generate and verify CPF-like codes.
+Codv utilizes the modulo 11 algorithm for calculating the check digits, this is the same algorithm used by the [CPF](https://en.wikipedia.org/wiki/Cadastro_de_Pessoas_F%C3%ADsicas) and a lot of other identifications numbers worldwide.
+
+The following codes demonstrates how to generate and verify CPF-like codes.
 
 ### Generating a valid random CPF
 
