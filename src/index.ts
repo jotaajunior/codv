@@ -1,4 +1,6 @@
 export * from './createBody'
+export * from './createHexBody'
 export * from './generateCode'
+export * from './generateHexCode'
 export * from './getCheckDigit'
 export * from './verifyCode'
