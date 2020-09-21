@@ -29,9 +29,26 @@ const [code, checkDigits] = generateCode() // [ '25931', '49' ]
 - `bodyLength`: the length of the code's body. Default is 5.
 - `checkLength`: the length of the code's check digits. Default is 2.
 
+### `generateHexCode`
+
+Generates a random hexadecimal code.
+
+For hexadecimal codes, the check digits are still generated with modulo 11 algorithm, so check digits will be decimal.
+
+```ts
+import { generateHexCode } from 'codv'
+
+const [code, checkDigits] = generateHexCode() // [ 'b5ac9', '26' ]
+```
+
+#### Parameters
+
+- `bodyLength`: the length of the code's body. Default is 5.
+- `checkLength`: the length of the code's check digits. Default is 2.
+
 ### `verifyCode`
 
-Verifies a random code.
+Verifies if a given a random code (decimal or hexadecimal) is valid.
 
 ```ts
 import { verifyCode } from 'codv'
