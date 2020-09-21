@@ -19,7 +19,7 @@ jobs:
           registry-url: https://registry.npmjs.org/
 
       - name: Install dependencies
-        run: yarn
+        uses: bahmutov/npm-install@v1
 
       - name: Build the project
         run: yarn tsc
