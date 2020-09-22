@@ -95,7 +95,7 @@ console.log(verifyCode('471896067', '35')) // false
 ### Browser usage
 
 ```html
-<script src="https://unpkg.com/codv@1.1.0/dist/bundle.js"></script>
+<script src="https://unpkg.com/codv@1.1.1/dist/codv.min.js"></script>
 ```
 
 Then:
