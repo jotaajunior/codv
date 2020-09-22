@@ -2,7 +2,9 @@
 
 ![](https://img.shields.io/badge/license-MIT-green)
 [![codecov](https://codecov.io/gh/jotaajunior/codv/branch/master/graph/badge.svg?token=XE6V7I3RF4)](https://codecov.io/gh/jotaajunior/codv)
-![Build](https://github.com/jotaajunior/codv/workflows/Build/badge.svg)
+![test](https://github.com/jotaajunior/codv/workflows/build/test.svg)
+![publish](https://github.com/jotaajunior/codv/workflows/build/publish.svg)
+
 
 Codv is a tiny library for generating arbitrary-sized codes with [check digits](https://en.wikipedia.org/wiki/Check_digit).
 
@@ -99,5 +101,5 @@ console.log(verifyCode('471896067', '35')) // false
 Then:
 
 ```js
-Codv.generateCode() // [ "83087", "99" ]
+Codv.generateCode() // (2) [ "83087", "99" ]
 ```
