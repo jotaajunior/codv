@@ -2,7 +2,7 @@
 src
 .eslintrc.json
 .eslintignore
-.webpack.*.js
+.rollup.config.json
 
 # npm
 node_modules
