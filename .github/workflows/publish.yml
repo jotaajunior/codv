@@ -1,4 +1,4 @@
-name: Publish to NPM
+name: publish
 
 on:
   release:
@@ -22,7 +22,7 @@ jobs:
         uses: bahmutov/npm-install@v1
 
       - name: Build the project
-        run: yarn tsc
+        run: yarn build
 
       - name: Publish
         run: npm publish --access public
