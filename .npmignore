@@ -2,6 +2,7 @@
 src
 .eslintrc.json
 .eslintignore
+.webpack.*.js
 
 # npm
 node_modules

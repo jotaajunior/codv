@@ -1,13 +1,13 @@
 {
   "name": "codv",
-  "version": "1.0.9",
+  "version": "1.1.0",
   "main": "dist/index.js",
   "author": "Jota <jjunior@protonmail.ch>",
   "description": "Generate and validates random codes with check digits",
   "license": "MIT",
   "scripts": {
     "test": "jest --coverage",
-    "build": "tsc",
+    "build": "yarn webpack",
     "lint": "eslint src --ext ts"
   },
   "devDependencies": {
@@ -24,7 +24,10 @@
     "eslint-plugin-standard": "^4.0.1",
     "jest": "^26.4.2",
     "ts-jest": "^26.3.0",
-    "typescript": "^4.0.2"
+    "ts-loader": "^8.0.4",
+    "typescript": "^4.0.2",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12"
   },
   "repository": "https://github.com/jotaajunior/codv.git"
 }

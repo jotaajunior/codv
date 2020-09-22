@@ -69,8 +69,6 @@ const code = verifyCode('25931', '49') // true
 
 Codv utilizes the modulo 11 algorithm for calculating the check digits, this is the same algorithm used by the [CPF](https://en.wikipedia.org/wiki/Cadastro_de_Pessoas_F%C3%ADsicas) and a lot of other identifications numbers worldwide.
 
-The following codes demonstrates how to generate and verify CPF-like codes.
-
 ### Generating a valid random CPF
 
 ```ts
@@ -88,4 +86,18 @@ import { verifyCode } from './verifyCode'
 
 console.log(verifyCode('471896067', '34')) // true
 console.log(verifyCode('471896067', '35')) // false
+```
+
+---
+
+### Browser usage
+
+```html
+<script src="https://unpkg.com/codv@1.1.0/dist/bundle.js"></script>
+```
+
+Then:
+
+```js
+Codv.generateCode() // [ "83087", "99" ]
 ```
