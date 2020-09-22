@@ -2,8 +2,8 @@
 
 ![](https://img.shields.io/badge/license-MIT-green)
 [![codecov](https://codecov.io/gh/jotaajunior/codv/branch/master/graph/badge.svg?token=XE6V7I3RF4)](https://codecov.io/gh/jotaajunior/codv)
-![test](https://github.com/jotaajunior/codv/workflows/build/test.svg)
-![publish](https://github.com/jotaajunior/codv/workflows/build/publish.svg)
+![test](https://github.com/jotaajunior/codv/workflows/test/badge.svg)
+![publish](https://github.com/jotaajunior/codv/workflows/publish/badge.svg)
 
 
 Codv is a tiny library for generating arbitrary-sized codes with [check digits](https://en.wikipedia.org/wiki/Check_digit).
