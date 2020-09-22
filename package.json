@@ -1,6 +1,6 @@
 {
   "name": "codv",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "main": "lib/codv.js",
   "unpkg": "dist/codv.js",
   "types": "types/index.d.ts",
