@@ -7,7 +7,7 @@
   "license": "MIT",
   "scripts": {
     "test": "jest --coverage",
-    "build": "tsc",
+    "build": "yarn webpack",
     "lint": "eslint src --ext ts"
   },
   "devDependencies": {
